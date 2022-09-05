@@ -1,0 +1,34 @@
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-conteiner {
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.section-benefits .benefits-item + .benefits-item {
+  margin-left: 30px;
+}
+
+.section-benefits,
+.section-team {
+  padding: 94px 0px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+}
+
+.sectio-icon-benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
