@@ -1,17 +1,21 @@
-.conteiner-team {
-  display: flex;
-}
+// .conteiner-team {
+//   display: flex;
+// }
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.conteiner-team .team-link + .team-link {
-  margin-left: 30px;
+// .conteiner-team .team-link + .team-link {
+//   margin-bottom: 30px;
+// }
+
+.team-link + .team-link{
+  margin-top: 30px;
 }
 
 .team-link {

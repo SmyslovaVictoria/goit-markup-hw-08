@@ -18,14 +18,14 @@
   </head>
   <body>
     <!--  Шапка страницы -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container main-nav">
         <a href="./index.html" class="logo link">
           Web <span class="accent link">Studio</span></a
-        >
+        > -->
 
         <!-- Навигация -->
-        <nav>
+        <!-- <nav>
           <ul class="site-nav">
             <li class="item">
               <a href="./index.html" class="link current">Студия</a>
@@ -35,10 +35,10 @@
             </li>
             <li class="item"><a href="" class="link item">Контакты</a></li>
           </ul>
-        </nav>
+        </nav> -->
 
         <!-- Контактные данные -->
-        <ul class="auth-nav">
+        <!-- <ul class="auth-nav">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="auth-nav-link link">
               <svg class="auth-icon" width="16px" height="12px">
@@ -57,21 +57,21 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- Заголовок -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         </div>
-        <!-- Кнопка заказа услуги -->
+        Кнопка заказа услуги
         <div class="btn-hero containet">
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наши преимущества (заголовок секции был скрыт при оформлении в css) -->
       <section class="section-benefits">
@@ -131,7 +131,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="section-making">
+      <!-- <section class="section-making">
         <div class="container">
           <h2 class="making-title">Чем мы занимаемся</h2>
           <ul class="container-making">
@@ -173,7 +173,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наша команда -->
       <section class="section-team">
@@ -373,42 +373,42 @@
         <div class="container">
           <h2 class="customer-title">Постоянные клиенты</h2>
           <ul class="container-customer">
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-case">
               <a href="" class="customer-link link">
                 <svg class="icon-customer" width="106" height="60">
                   <use href="./images/symbol-img.svg#icon-Logo-6"></use>
@@ -417,13 +417,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
     </main>
 
     <!-- Page footer -->
     <footer class="footer">
       <div class="footer__container container ">
-        <div >
+        <div class="navigation__container">
           <a href="./index.html" class="footer__logo link">
             Web <span class="accent link">Studio</span></a
           >
@@ -479,30 +479,27 @@
               </a>
             </li>
           </ul>
-        </div>
-
+        </div> 
         <div class="footer-subs">
+          <h2 class="soc__title">Подпишитесь на рассылку</h2>
           <form class="footer-subs-form">
-            <h2 class="soc__title">Подпишитесь на рассылку</h2>
-            <label for="email" class="footer-form-label"> 
               <input
-                type="email"
                 class="footer-form-input"
+                type="email"
                 name="email"
                 placeholder="E-mail"
-              />
-            
-            <button type="submit" class="button-subs-footer">
+              >
+              <button type="submit" class="button-subs-footer">
               Подписаться
-              <span>
-                <svg class="icon-subs-footer" width="24" height="24">
+              <span class="icon-subs-footer">
+                <svg  width="24" height="24">
                   <use href="./images/symbol-img.svg#icon-icon-send"></use>
                 </svg>
               </span>
             </button>
-            </label>
-            
           </form>
+        </div>
+         
         </div>
       </div>
     </footer>
@@ -605,7 +602,7 @@
 
         </form>
       </div>
-    </div>
+    </div> 
     <script src="./js/modal.js"></script>
   </body>
 </html>
