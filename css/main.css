@@ -224,25 +224,26 @@ img {
   background-color: var(--background-color-hero-footer);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
-  max-width: 1600px;
   background-size: cover;
   text-align: center;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .hero-title {
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  max-width: 696px;
   display: inline-block;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  width: 100%;
 }
 
 .hero-button {
@@ -715,8 +716,6 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
