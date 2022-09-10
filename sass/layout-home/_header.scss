@@ -18,7 +18,8 @@
 
 /* Site-Nav */
 .site-nav {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-left: 93px;
 }
 
@@ -62,7 +63,8 @@
 
 /* Auth-Nav */
 .auth-nav {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-left: auto;
   align-items: baseline;
 }
@@ -94,3 +96,5 @@
 .auth-nav-link:focus .auth-icon {
   fill: var(--accent-color);
 }
+
+

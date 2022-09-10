@@ -1,38 +1,30 @@
 .section-customer {
-  // display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container-customer {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  outline: 2px solid #0ea106dc;
-  justify-content: center;
-}
-
-.customer-case {
-   flex-basis: calc(100% / 2 - 30px);
 }
 
 .customer-title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .customer-link {
-  // width: 170px;
-  // height: 92px;
+  width: 170px;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 0 16px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
