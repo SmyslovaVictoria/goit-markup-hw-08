@@ -17,6 +17,15 @@
 //   display: block;
 // }
 
+.site-nav .item,
+.auth-nav .item{
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .site-nav .link {
   display: block;
   position: relative;
@@ -111,12 +120,5 @@
   fill: var(--accent-color);
 }
 
-.site-nav .item,
-.auth-nav .item{
-  display: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+
 

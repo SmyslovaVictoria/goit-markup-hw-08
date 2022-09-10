@@ -662,7 +662,7 @@ img {
   fill: #2196f3;
 }
 
-@i @import "./layout-home/footer";
+@import "./layout-home/footer";
 .backdrop {
   position: fixed;
   top: 0;
