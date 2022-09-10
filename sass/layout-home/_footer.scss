@@ -4,22 +4,32 @@
 
 .footer__container{
   flex-direction: column;
-}
-
-.footer__container {
-  padding: 60px 0 60px;
   display: flex;
-  // flex-wrap: wrap;
   outline: 2px solid #0ea106dc;
   justify-content: center;
   text-align: center;
+  @media screen and (min-width: 480px){
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+   @media screen and (min-width: 1200px){
+    flex-direction: row;
+  }
 }
 
 .navigation__container{
   margin-bottom: 60px;
   outline: 2px solid #0ea106dc;
   justify-content: center;
-  
+  @media screen and (min-width: 768px){
+  margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px){
+  margin-right: 0;
+  }
 }
 
 .footer__logo {
@@ -106,46 +116,36 @@
 }
 
 .soc__conteinet {
-  // max-width: 206px;
-  // margin-left: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+    @media screen and (min-width: 1200px){
+    max-width: 206px;
+    margin-left: 70px;
+  }
 }
-
-
 
 .footer-subs {
   display: flex;
-  // width: 570px;
-  // min-height: 86px;
-  // margin-left: 93px;
-  // align-items: center;
   flex-direction: column;
+  @media screen and (min-width: 1200px){
+  width: 570px;
+  min-height: 86px;
+  margin-left: 90px;
+  }
 }
 
-// .footer-subs-form{
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-// }
-
-// .footer-form-input {
-//   width: 100%;
-//   padding-left: 16px;
-//   background-color: transparent;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   border-radius: 4px;
-//   margin-right: 12px;
-//   width: 358px;
-//   height: 50px;
-//   color: var(--white-color);
-// }
+.footer-subs-form{
+  @media screen and (min-width: 1200px){
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+}
 
 .footer-form-input {
   width: 90%;
-  // max-width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -153,6 +153,14 @@
   color: var(--white-color);
   padding-left: 16px;
   margin-bottom: 20px;
+   @media screen and (min-width: 1200px){
+    width: 100%;
+    width: 350px;
+    height: 55px;
+    max-width: 450px;
+    margin-right: 10px;
+    margin-bottom: 0;
+   }
 }
 
 .button-subs-footer {
@@ -179,4 +187,10 @@
   margin-bottom: 0;
   margin-left: 10px;
  align-items: center;
+}
+
+.soc__title{
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
 }

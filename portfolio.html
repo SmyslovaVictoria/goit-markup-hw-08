@@ -82,8 +82,8 @@
 
         <!-- Content-->
         <h1 class="content-hero visually-hidden">Content</h1>
-        <div class="container">
-          <ul class="card">
+        <div class="container ">
+          <ul class="card padding">
             <li class="card__info">
               <a class="card__link link" href="">
                 <div class="card__item">
@@ -291,8 +291,8 @@
 
      <!-- Page footer -->
     <footer class="footer">
-      <div class="footer__container container ">
-        <div >
+      <div class="footer__container container padding">
+        <div class="navigation__container">
           <a href="./index.html" class="footer__logo link">
             Web <span class="accent link">Studio</span></a
           >
@@ -348,30 +348,27 @@
               </a>
             </li>
           </ul>
-        </div>
-
+        </div> 
         <div class="footer-subs">
+          <h2 class="soc__title">Подпишитесь на рассылку</h2>
           <form class="footer-subs-form">
-            <h2 class="soc__title">Подпишитесь на рассылку</h2>
-            <label for="email" class="footer-form-label"> 
               <input
-                type="email"
                 class="footer-form-input"
+                type="email"
                 name="email"
                 placeholder="E-mail"
-              />
-            
-            <button type="submit" class="button-subs-footer">
+              >
+              <button type="submit" class="button-subs-footer">
               Подписаться
-              <span>
-                <svg class="icon-subs-footer" width="24" height="24">
+              <span class="icon-subs-footer">
+                <svg  width="24" height="24">
                   <use href="./images/symbol-img.svg#icon-icon-send"></use>
                 </svg>
               </span>
             </button>
-            </label>
-            
           </form>
+        </div>
+         
         </div>
       </div>
     </footer>
