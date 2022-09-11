@@ -242,7 +242,35 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="conteiner-team">
             <li class="team-link">
-              <img src="images/imgone.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team-igr-des1x-min.jpg    1x,
+                    ./img/team-igr-des2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                >
+                <source
+                  srcset="
+                    ./img/team-igr-tab1x-min.jpg    1x,
+                    ./img/team-igr-tab2x-min.jpg.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                >
+                <source
+                  srcset="
+                    ./img/team-igr-mob1x-min.jpg    1x,
+                    ./img/team-igr-mob2x-min.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/images/imgone.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-item">
                 <h3 class="personal-title">Игорь Демьяненко</h3>
                 <p class="personal-text">Product Designer</p>
@@ -383,7 +411,7 @@
             <li class="team-link">
               <img src="images/imgfour.jpg" alt="Михаил Ермаков" width="270" />
               <div class="team-item">
-                <h3 class="personal-title">Игорь Демьяненко</h3>
+                <h3 class="personal-title">Михаил Ермаков</h3>
                 <p class="personal-text">UI Designer</p>
                 <ul class="personal-soc list">
                   <li class="personal-soc-item">
