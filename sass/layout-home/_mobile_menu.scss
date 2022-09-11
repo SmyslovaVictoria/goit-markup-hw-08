@@ -1,3 +1,119 @@
-.header__menu-btn{
-   background-color: aqua; 
+.mobil__menu-open{
+   margin-left: auto;
+   background-color: transparent;
+   border: transparent;
+
+   @media screen and (max-width: 480px){
+      position: relative;
+   }
+   @media screen and (min-width: 480px){
+      position: relative;
+   }
+   @media screen and (min-width: 768px){
+      display: none;
+   }
+   @media screen and (min-width: 1200px){
+      display: none;
+   }
+   
+}
+
+.icon__mobil-menu{
+   &:hover,
+   &:focus{
+      fill: var(--accent-color);
+   }
+}
+
+.mobil__menu{
+   position: fixed;
+   background-color: #fff;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   flex-direction: column;
+   padding: 0 25px 48px;
+   >.container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+}
+
+.mobil__menu-close{
+   display: block;
+   margin-left: auto;
+   background-color: transparent;
+   border: transparent;
+   padding-top: 10px;
+}
+
+.mobil__nav-link{
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 1.17;
+   letter-spacing: 0.02em;
+   color: #212121;
+   &:hover,
+   &:focus{
+      color: var(--accent-color);
+   }
+}
+
+.mobil__nav-item + .mobil__nav-item{
+   margin-top: 32px;
+}
+
+.mobil__menu-auth-item + .mobil__menu-auth-item {
+   margin-top: 32px;
+}
+
+.mobil__menu-tel-link{
+   font-weight: 500;
+   font-size: 34px;
+   line-height: 1.17;
+   letter-spacing: 0.02em;
+   color: #2196F3;
+}
+
+.mobil__menu-mail-link{
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 1.16;
+   letter-spacing: 0.02em;
+   color: #757575;
+}
+
+.mobil__menu-auth-nav{
+   margin-top: auto;
+   margin-bottom: 64px;
+}
+
+.menu__socials{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.menu__socials{
+   position: relative;
+   padding-bottom: 48px;
+}
+
+.menu__socials-item:not(:last-child):after{
+   content: "";
+   height: 22px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.menu__socials-link{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.22;
+   letter-spacing: 0.02em;
+   color: #2196F3;
 }

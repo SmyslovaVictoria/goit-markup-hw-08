@@ -1,29 +1,34 @@
 /* Main-nav */
 .header {
   border-bottom: 1px solid #ececec;
-  justify-content: space-between;
 }
+
 .main-nav {
   display: flex;
-  align-items: center;
 }
 
-/* Text and Font for Site-Nav/Auth-nav */
-
-
 /* Site-Nav */
-
-// .site-nav .item {
-//   display: block;
-// }
-
-.site-nav .item,
 .auth-nav .item{
-  display: none;
   font-weight: 500;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px){
+  font-size: 12px;
+  line-height: 1.16px;
+  }
+  @media screen and (min-width: 1200px){
   font-size: 14px;
   line-height: 1.14;
+  }
+}
+
+.site-nav .item{
+  font-weight: 500;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 768px){
+  font-size: 14px;
+  line-height: 14px;
+  line-height: 1.16;
+  }
 }
 
 .site-nav .link {
@@ -57,7 +62,7 @@
 }
 
 .site-nav {
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 480px){
     display: none;
   }
   @media screen and (min-width: 480px){
@@ -67,7 +72,6 @@
     display: flex;
     margin-left: 10;
     gap: 50px;
-    justify-content: space-between;
     margin-left: 70px;
   }
   @media screen and (min-width: 1200px){
@@ -76,23 +80,27 @@
   }
 }
 
-/* Auth-Nav */
 .auth-nav {
-   @media screen and (min-width: 480px){
+   @media screen and (max-width: 480px){
+    display: none;
+  }
+  @media screen and (min-width: 480px){
     display: none;
   }
   @media screen and (min-width: 768px){
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-bottom: 10px;
+    align-self: center;
+    row-gap: 10px;
   }
   @media screen and (min-width: 1200px){
     display: flex;
     flex-direction: row;
     gap: 30px;
-    align-items: baseline;
+    align-items: center;
     margin-left: auto;
+    align-self: auto;
   }
 }
  

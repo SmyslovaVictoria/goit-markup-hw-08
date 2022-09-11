@@ -222,3 +222,10 @@ textarea::placeholder {
   display: block;
   margin-bottom: 5px;
 }
+
+.backdrop{
+  @media screen and (max-width: 479px){
+    padding: 93px 15px;
+}
+
+}

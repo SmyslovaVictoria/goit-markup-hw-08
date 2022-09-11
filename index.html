@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--  Шапка страницы -->
@@ -23,24 +23,6 @@
         <a href="./index.html" class="logo link">
           Web <span class="accent link">Studio</span></a
         >
-      </div>  
-    <!-- Menu button open -->
-        <button
-          class="header__menu-btn menu-btn js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="menu-btn__icon" width="40" height="40">
-            <use href="./images/symbol-img.svg#icon-menu_40px"></use>
-          </svg>
-        </button>
-        <div class="menu-container js-menu-container" id="mobile-menu"> 
-          <!-- Menu button close -->
-          <button class="menu-container__menu-btn menu-btn js-close-menu">
-            <svg class="menu-btn__icon" width="40" height="40">
-              <use href="./images/symbol-img.svg#icon-close_40px"></use>
-            </svg>
-          </button>
         <!-- Навигация -->
         <nav>
           <ul class="site-nav">
@@ -73,6 +55,68 @@
             </a>
           </li>
         </ul>
+
+        <!-- Мобильное меню -->
+        <button
+          type="button"
+          class="mobil__menu-open" data-menu-open>
+          <svg class="icon__mobil-menu" width="40" height="40">
+            <use href="./images/symbol-img.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobil__menu is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="mobil__menu-close" data-menu-close>
+            <svg class="icon__mobil-menu" width="40" height="40">
+              <use href="./images/symbol-img.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+
+          <ul class="mobil__menu-nav">
+            <li class="mobil__nav-item">
+              <a href="./index.html" class="mobil__nav-link link current">Студия</a>
+            </li>
+            <li class="mobil__nav-item">
+              <a href="./portfolio.html" class="mobil__nav-link link">Портфолио</a>
+            </li>
+            <li class="mobil__nav-item">
+              <a href="" class="mobil__nav-link item link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobil__menu-auth-nav">
+             <li class="mobil__menu-auth-item">
+              <a href="tel:+380961111111" class="mobil__menu-tel-link link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobil__menu-auth-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobil__menu-mail-link link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu__socials">
+            <li class="menu__socials-item">
+              <a href="" class="menu__socials-link link">Instagram</a>
+            </li>
+            <li class="menu__socials-item">
+              <a href="" class="menu__socials-link link">Twitter</a>
+            </li>
+            <li class="menu__socials-item">
+              <a href="" class="menu__socials-link link">Facebook</a>
+            </li>
+            <li class="menu__socials-item">
+              <a href="" class="menu__socials-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -434,12 +478,12 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
     </main>
 
     <!-- Page footer -->
     <footer class="footer">
-      <div class="footer__container container ">
+      <div class="footer__container container">
         <div class="navigation__container">
           <a href="./index.html" class="footer__logo link">
             Web <span class="accent link">Studio</span></a
@@ -450,9 +494,11 @@
               class="navigation__address link"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
-            <ul >
+            <ul>
               <li class="navigation__item">
-                <a href="mailto:info@devstudio.com" class="navigation__link link"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="navigation__link link"
                   >info@devstudio.com</a
                 >
               </li>
@@ -496,31 +542,30 @@
               </a>
             </li>
           </ul>
-        </div> 
+        </div>
         <div class="footer-subs">
           <h2 class="soc__title">Подпишитесь на рассылку</h2>
           <form class="footer-subs-form">
-              <input
-                class="footer-form-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              >
-              <button type="submit" class="button-subs-footer">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button-subs-footer">
               Подписаться
               <span class="icon-subs-footer">
-                <svg  width="24" height="24">
+                <svg width="24" height="24">
                   <use href="./images/symbol-img.svg#icon-icon-send"></use>
                 </svg>
               </span>
             </button>
           </form>
-        </div> 
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-soc-footer" width="11" height="11">
@@ -587,7 +632,9 @@
           </div>
 
           <div class="modal-form">
-            <label for="user-comment" class="modal-form-label">Комментарий</label>
+            <label for="user-comment" class="modal-form-label"
+              >Комментарий</label
+            >
             <textarea
               id="user-comment"
               name="user-comment"
@@ -606,19 +653,16 @@
             />
             <label for="modal-accord" class="checkbox-accord">
               Соглашаюсь с рассылкой и принимаю
-              <a
-                class="accent-color-accord"
-                href=""
-                >Условия договора</a>
+              <a class="accent-color-accord" href="">Условия договора</a>
             </label>
           </div>
           <div class="container-modal-btn">
             <button type="submit" class="modal-go-button">Отправить</button>
           </div>
-
         </form>
       </div>
-    </div> 
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
