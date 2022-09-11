@@ -1,36 +1,4 @@
 
-// .benefits-conteiner {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-//   // flex-basis: calc((100% - 30px) / 4);
-//   // flex-basis: calc(100% / 4 - 30px);
-  
-// }
-
-// .benefits-item {
-// @media screen and (min-width: 768px){
-//     flex-basis: calc((100% - 2) / -30px);
-//   }
-//   @media screen and (min-width: 1200px){
-//     flex-basis: calc((100% - 30px) / 4);
-//     // flex-basis: calc((100% - 3 * 30) / 4);
-//   }
-// }
-
-// .section-benefits .benefits-item + .benefits-item {
-//   margin-left: 30px;
-// }
-
-// .section-benefits,
-// .section-team {
-//   padding: 94px 0px;
-// }
-
-// .benefits-item{
-//   flex-basis: calc((100% - 30px) / - 2);
-// }
-
 .benefits-conteiner{
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +7,19 @@
 
 .benefits-title {
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.text{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .sectio-icon-benefits {

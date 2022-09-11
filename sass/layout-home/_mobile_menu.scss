@@ -117,3 +117,9 @@
    letter-spacing: 0.02em;
    color: #2196F3;
 }
+
+ .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -11,21 +11,15 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid #0ea106dc;
   @media screen and (min-width: 480px){
     width: 480px;
-    outline: 2px solid tomato;
-   
   }
   @media screen and (min-width: 768px){
-    width: 720px;
-    outline: 2px solid teal;
-    
+    width: 720px; 
   }
   @media screen and (min-width: 1200px){
    width: 1200px; 
-   outline: 2px solid yellow; 
-
+  //  outline: 2px solid yellow; 
   }
 }
 

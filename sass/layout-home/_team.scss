@@ -6,10 +6,20 @@
 
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+    @media screen and (min-width: 480px){
+  font-size: 28px;
+  line-height: 1.17;
+  }
+  @media screen and (min-width: 768px){
+  font-size: 28px;
+  line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px){ 
+  font-size: 36px;
+  line-height: 1.16;
+  }
 }
 
 // .conteiner-team .team-link + .team-link {
@@ -38,15 +48,16 @@
   background-color: #ffffff;
 }
 
-.personal-title,
-.personal-text {
+.personal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .personal-text {
+  text-align: center;
   color: var(--primery-text-color);
   font-weight: 400;
   margin-top: 10px;
